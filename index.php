@@ -22,19 +22,22 @@ require_once("config.php");
 //echo json_encode($search);
 
 //insere um usuário no banco
-$aluno = new Usuario("aluno", "@lun0");
+//$aluno = new Usuario("aluno", "@lun0");
 //$aluno->setDeslogin("aluno");
 //$aluno->setDessenha("@lun0");
 //$aluno->insert();
 //echo $aluno;
 
-// altera um usuário
+//altera um usuário
+//$usuario = new Usuario();
+//$usuario ->loadById(11);
+//$usuario-> update("coordenador","09080706");
+//echo $usuario;
+
+//exclui um usuário
 $usuario = new Usuario();
-$usuario ->loadById(11);
-$usuario-> update("coordenador","09080706");
-
+$usuario ->loadById(12);
+$usuario-> delete();
 echo $usuario;
-
-
 
  ?>
